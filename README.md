@@ -10,3 +10,5 @@ at you)
 
 Markowitz Model is the first goal. Probably going to remain on P
 side as its the thing that makes most sense to me as a buyer
+
+Written in Python
