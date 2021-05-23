@@ -1,3 +1,4 @@
+from math import exp
 import random as r
 import matplotlib.pyplot as plt
 
@@ -10,8 +11,8 @@ class Brownian:
 
         self.range = [0]
         for i in range(n):
-            delta_B = r.gauss(0, sigma * self.delta_t)
-            self.range.append(self.range[i] + delta_B + mu * delta_t * n)
+            delta_B = r.gauss(mu * delta_t, (sigma ** 2) * self.delta_t)
+            self.range.append(self.range[i] + delta_B )
 
 
 B = Brownian(mu=0, sigma=1)
